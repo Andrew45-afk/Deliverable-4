@@ -1,5 +1,40 @@
 # Deliverable-4
 
+## Part 4: Alternative Development Matrix
+
+### Alternative Matrix – Custom Development Decision
+
+| Criteria                        | Custom Development (Chosen) | Off-the-Shelf Software | SaaS Solution (e.g. TeamSnap) | Low-Code Platform | Open Source |
+|---------------------------------|-----------------------------|------------------------|-------------------------------|-------------------|-------------|
+| **Initial Cost**                | Low (Student team)          | Medium–High            | Low–Medium (Subscription)     | Low               | Low         |
+| **Customization / Fit**         | Excellent (Exact match)     | Poor                   | Limited                       | Moderate          | Moderate    |
+| **Time to Deploy**              | Medium                      | Fast                   | Very Fast                     | Fast              | Medium      |
+| **Long-term Maintenance**       | Easy (Simple PHP stack)     | Difficult              | None (Vendor managed)         | Moderate          | Moderate    |
+| **Security & Data Control**     | High (Full control)         | Medium                 | Low–Medium                    | Medium            | High        |
+| **Scalability**                 | Good (Cloud + Docker)       | Limited                | Excellent                     | Good              | Good        |
+| **Alignment with Requirements** | Excellent                   | Poor                   | Moderate                      | Moderate          | Moderate    |
+
+### Narrative & Justification
+
+After evaluating multiple development alternatives, our team selected **Custom Development** as the best approach for the **Player Management System**.
+
+**Key Reasons:**
+
+- **Perfect Fit for Requirements**: Our system has very specific needs (League, Team, Player, and Game management with custom reporting and workflows). Off-the-shelf and SaaS solutions do not fully support our exact data model and processes.
+
+- **Low Long-Term Cost**: As a student team with a limited budget, building a simple PHP-based system allows us to avoid expensive licensing fees and recurring SaaS subscriptions.
+
+- **Full Control & Security**: We retain complete ownership of our data and can implement security measures tailored to our needs (role-based access, input sanitization, etc.).
+
+- **Easy Maintenance**: Using plain HTML + PHP (as decided in our tech stack) makes the system simple for our team to understand, update, and maintain throughout the semester and beyond.
+
+- **Educational Value**: Custom development gives our team hands-on experience with the full software development lifecycle, which aligns with the goals of this IS436 course.
+
+While SaaS solutions offer speed and low upfront cost, they lack the customization and data control we require. Off-the-shelf software would force us to change our processes to fit the tool rather than building the tool to fit our needs.
+
+**Final Decision**: Custom Development is the most suitable approach for our Player Management System.
+
+**Part 5: Architecture Diagram**
 Our Player Management System is a web-based application for managing leagues, teams, players, and games. After evaluating the five architectural options against our four key non-functional requirements (99.5% uptime, fast dashboards, easy student maintenance, and low cost), we selected a Thin-Client / Cloud Computing hybrid architecture.
 
 Why Thin-Client + Cloud is the best fit:
